@@ -1,0 +1,33 @@
+<!-- certificado.component.html -->
+
+<div class="tab-container">
+    <div class="tab" (click)="selectedTab = 'obtenerCertificado'" [class.active]="selectedTab === 'obtenerCertificado'">Obtener Certificado</div>
+    <div class="tab" (click)="selectedTab = 'requisitos'" [class.active]="selectedTab === 'requisitos'">Requisitos</div>
+  </div>
+  
+  <div class="tab-content" *ngIf="selectedTab === 'obtenerCertificado'">
+    <div class="form-container">
+      <div class="input-group">
+        <label for="codigoCas">Escribir Código CAS</label>
+        <input type="text" id="codigoCas" [(ngModel)]="codigoCas">
+      </div>
+  
+      <div class="input-group">
+        <label for="adjuntarDocumento">Adjuntar Documento</label>
+        <input type="file" id="adjuntarDocumento" (change)="onFileChange($event)">
+      </div>
+  
+      <div class="input-group">
+        <label for="comentario">Escribir Comentario</label>
+        <textarea id="comentario" [(ngModel)]="comentario"></textarea>
+      </div>
+  
+      <button (click)="submitForm()">Enviar</button>
+    </div>
+  </div>
+  
+  <div class="tab-content" *ngIf="selectedTab === 'requisitos'">
+    <!-- Contenido de la pestaña de requisitos -->
+    <p>Aquí va el contenido de la pestaña de requisitos.</p>
+  </div>
+  

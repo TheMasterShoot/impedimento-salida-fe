@@ -1,0 +1,57 @@
+/* certificado.component.css */
+
+body {
+    background-color: #014984;
+    color: #fff;
+  }
+  
+  .tab-container {
+    display: flex;
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: #014984;
+    border: 2px solid #fff;
+    border-radius: 5px;
+  }
+  
+  .tab-content {
+    margin-top: 20px;
+  }
+  
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #014984;
+    background-color: #fff;
+  }
+  
+  button {
+    background-color: #fff;
+    color: #014984;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
