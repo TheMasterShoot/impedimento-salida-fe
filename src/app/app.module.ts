@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { CertificadoComponent } from './components/certificado/certificado.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
-import { ObtenerCertificadoComponent } from './components/obtener-certificado/obtener-certificado.component';
-import { RequisitosComponent } from './components/requisitos/requisitos.component';
 import { SolicitudesComponent } from './components/solicitudes/solicitudes.component';
+import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 
 @NgModule({
@@ -16,9 +18,11 @@ import { SolicitudesComponent } from './components/solicitudes/solicitudes.compo
     AppComponent,
     CertificadoComponent,
     LoginComponent,
-    ObtenerCertificadoComponent,
-    RequisitosComponent,
-    SolicitudesComponent
+    SolicitudesComponent,
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

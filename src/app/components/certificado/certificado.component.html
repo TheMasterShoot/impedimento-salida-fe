@@ -1,33 +1,215 @@
-<!-- certificado.component.html -->
+<section class="servicios">
+    <div class="container post4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="/">
+                    <i class="fa fa-home" aria-hidden="true" style="font-size: 17px; padding-right:5px;"></i>
+                    Inicio
+                </a>
+            </li>
+            <li class="breadcrumb-item active">Servicios en línea / </li>
+        </ol>
+        <div class="panel-body container-content" id="countDonw">
 
-<div class="tab-container">
-    <div class="tab" (click)="selectedTab = 'obtenerCertificado'" [class.active]="selectedTab === 'obtenerCertificado'">Obtener Certificado</div>
-    <div class="tab" (click)="selectedTab = 'requisitos'" [class.active]="selectedTab === 'requisitos'">Requisitos</div>
-  </div>
-  
-  <div class="tab-content" *ngIf="selectedTab === 'obtenerCertificado'">
-    <div class="form-container">
-      <div class="input-group">
-        <label for="codigoCas">Escribir Código CAS</label>
-        <input type="text" id="codigoCas" [(ngModel)]="codigoCas">
-      </div>
-  
-      <div class="input-group">
-        <label for="adjuntarDocumento">Adjuntar Documento</label>
-        <input type="file" id="adjuntarDocumento" (change)="onFileChange($event)">
-      </div>
-  
-      <div class="input-group">
-        <label for="comentario">Escribir Comentario</label>
-        <textarea id="comentario" [(ngModel)]="comentario"></textarea>
-      </div>
-  
-      <button (click)="submitForm()">Enviar</button>
+
+
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2><span>Certificación de Existencia de Impedimento de Salida </span></h2>
+                </div>
+            </div>
+            <div class="tab-nav">
+                <ul class="nav nav-tabs navTabCAS">
+                    <li class="naVtabCAS__tabsCAS"><a class="navTabCAS__tabsCAS--btnCAS" data-toggle="tab" href="#menu1"
+                            aria-expanded="false">Requisitos</a></li>
+                    <li class="naVtabCAS__tabsCAS active"><a class="navTabCAS__tabsCAS--btnCAS" data-toggle="tab"
+                            href="#home" aria-expanded="true">Obtener Certificado</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade active in">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row queryCard">
+                                    <div class="cardQuery__group">
+                                        <div class="control-label col-md-12 labelCAS">Consulte su Código de Adquisición
+                                            de Servicio (CAS)</div>
+                                        <div class="col-md-12">
+                                            <form action="/CertificadoNoAntecedentesPenales/VisualizarCNAP"
+                                                id="formulario_cnap" method="post">
+                                                <div class="input-group">
+                                                    <input type="text" id="NumeroCas" class="form-control searchCAS"
+                                                        placeholder="Introduzca número de referencia CAS"
+                                                        name="numeroCas">
+                                                    <div class="input-group-btn">
+                                                        <button class="btn  btn-search searchCAS" id="Fake"
+                                                            type="submit"
+                                                            style=" background: #014884 !important; width: 125px; height: 34px; border-radius: 0 10px 10px 0 !important; color: #fff !important;"><i
+                                                                style="color:white !important;"
+                                                                class="fa fa-search"></i> Consultar CAS</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-12 queryCard__groupFooter" id="cuadroazul">
+                                            <span class="queryCard__groupFooter--text"> Si aún no tiene su código
+                                                <strong>CAS</strong>,<br> obténgalo en línea en tres pasos desde un
+                                                computador o dispositivo móvil. </span>
+                                            <a class="queryCard__groupFooter--btn" href="/comprarenlinea/"><span> <i
+                                                        class="fa fa-hand-pointer-o"></i> Obtener CAS</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <br>
+
+                                <img class="img-cas-banreservas" src="/assets/Content/images/cas-ejemplo.jpg">
+
+                                <br>
+
+
+                                <marquee behavior="alternate" direction="up" scrolldelay="400"
+                                    style="height: 15px; width: 10px; display: inline-block; position: absolute; left: 80%; bottom: 50px;">
+                                    <span class="important-tooltip" data-tooltipped=""
+                                        aria-describedby="tippy-tooltip-1"
+                                        data-original-title="Número de referencia de <br/>Código de Adquisición de Servicio<br/>(CAS)">
+                                    </span>
+                                </marquee>
+
+
+                            </div>
+
+                            <div class="col-md-6 importantCASCard">
+                                <!-- aqui van los demas elementos del formulario -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <div id="accordion">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12">
+                                    <div class="cardRequeriments">
+                                        <div class="cardRequeriments__imgAdjust">
+                                            <img class="cardRequeriments__imgAdjust--imgReq"
+                                                src="/assets/Content/images/information.svg">
+                                        </div>
+                                        <span class="cardRequeriments__text">Este servicio se ofrece a la ciudadanía con
+                                            la finalidad de demostrar la existencia o no de impedimento de salida del país como medida de coerción impuesta por una orden judicial.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <section id="item1" class="requisitosCards">
+                                <div class="requisitosCards__requisitosCardstitle ">
+                                    <h6 class="requisitosCards__requisitosCardstitle--requisitosCardsText">Solicitud de
+                                        Obtención en Línea de Certificación de Existencia de Impedimento de Salida
+                                        |<strong> RD$600.00</strong></h6>
+                                </div>
+                                <div class="contenido_requisitos">
+                                    <span>Las certificación de Existencia de Impedimento de Salida se pueden solicitar de manera presencial o
+                                        a través de nuestros servicios en línea, visitando www.pgr.gob.do.</span>
+                                    <p>Requisitos:</p>
+                                    <ul style="list-style-type:circle;">
+                                        <li>- Cédula de identidad y electoral o pasaporte del
+                                            solicitante.</li>
+                                        <li>- Instancia dirigida al Procurador General de la República, solicitando la
+                                            certificación.</li>
+                                        <li>- Tasa de servicio correspondiente. Estos pagos podrán efectuarse mediante
+                                            tarjeta de crédito a través del mismo portal o a través de los agentes de
+                                            pago autorizados, en cuyo caso deberá introducir el código de adquisición de
+                                            servicios (CAS) que se indica en el recibo de pago de la tasa de servicio
+                                            correspondiente.</li>
+                                    </ul>
+                                    <p>Pasos a seguir para esta solicitud:</p>
+                                    <ul style="list-style-type: none;">
+                                        <li>1. Ingresar y registrarse en el portal de servicios de la Procuraduría
+                                            General de la República, a través del siguiente enlace <a
+                                                href="https://portal.servicios.pgr.gob.do/UsuariosCiudadanos">
+                                                https://portal.servicios.pgr.gob.do/UsuariosCiudadanos</a>.
+                                        </li>
+                                        <li>2. Luego de registrarse, si usted ya adquirió en Banreservas la tasa de
+                                            servicio correspondiente, y tiene el Boucher de pago a mano, puede
+                                            seleccionar opción “Solicitar Certificación de Existencia de Impedimento de
+                                            Salida” y luego colocar el código de adquisición de servicios (CAS) ubicado
+                                            en la parte posterior del comprobante.</li>
+                                        <li>3. Llene todos los campos del formulario.</li>    
+                                        <li>4. Una vez sea evaluada su solicitud, el ciudadano recibirá una notificación
+                                            vía correo electrónico informándole que puede acceder al portal de servicios
+                                            (<a href="https://portal.servicios.pgr.gob.do">https://portal.servicios.pgr.gob.do</a>) y descargar la Certificación de Existencia de Impedimento de Salida
+                                            correspondiente.</li>
+                                        <li>5. Una vez hecho esto, se presentará su Certificación, y tendrá la opción de
+                                            imprimirla, guardarla o enviarla por correo electrónico.</li>
+                                        <li>6. En caso de que no tenga su tasa de servicio, puede comprarla por la
+                                            plataforma, en la misma opción de solicitar Certificación de Existencia de
+                                            Impedimento de Salida, o en el apartado de Solicitar Pago de Servicios,
+                                            seleccionando Certificación de Existencia de Impedimento de Salida. Estos
+                                            pagos podrán efectuarse mediante tarjeta de crédito.</li>
+                                    </ul>
+
+                                    <div class="row">
+                                        <div class="col-lg-3"></div>
+                                        <div class="col-lg-3 ">
+                                            <div class="border-card">
+
+                                                <img class="images-service-card"
+                                                    src="/assets/Content/images/horario-y-lugar.png" alt="Horarios"
+                                                    width="50px" pagespeed_url_hash="2823156086">
+
+                                                <div class="header-card-text">Horario y lugar de Prestación</div>
+                                                <div class="body-card-text">
+                                                    En línea, 24 horas, 7 días de la semana.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="border-card">
+                                                <img class="images-service-card"
+                                                    src="/assets/Content/images/costo-del-servicio.png" alt="Costos"
+                                                    width="50px" pagespeed_url_hash="2920370417">
+
+                                                <div class="header-card-text">Costo</div>
+                                                <div class="body-card-text">RD$600.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-3"></div>
+                                        <div class="col-md-3">
+                                            <div class="border-card">
+                                                <img class="images-service-card"
+                                                    src="/assets/Content/images/tiempo-de-realizacion.png"
+                                                    alt="Tiempo de realización" width="50px"
+                                                    pagespeed_url_hash="1245284848">
+
+                                                <div class="header-card-text">Tiempo de Realización</div>
+                                                <div class="body-card-text">
+                                                    1-3 Días laborables
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 ">
+                                            <div class="border-card">
+                                                <img class="images-service-card"
+                                                    src="/assets/Content/images/contacto.png" alt="Contacto"
+                                                    width="50px" pagespeed_url_hash="910831855">
+
+                                                <div class="header-card-text">Contacto Directo</div>
+                                                <div class="body-card-text">
+                                                    (809)-533-3522 <br>
+                                                    Ext.: 1088 y 293.
+                                                    <br>
+                                                    impedimentosdesalida@pgr.gob.do
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  
-  <div class="tab-content" *ngIf="selectedTab === 'requisitos'">
-    <!-- Contenido de la pestaña de requisitos -->
-    <p>Aquí va el contenido de la pestaña de requisitos.</p>
-  </div>
-  
+</section>

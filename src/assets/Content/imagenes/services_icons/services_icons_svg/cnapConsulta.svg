@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="496" height="496" viewBox="0 0 496 496">
+  <defs>
+    <clipPath id="clip-cnapconsulta">
+      <rect width="496" height="496"/>
+    </clipPath>
+  </defs>
+  <g id="cnapconsulta" clip-path="url(#clip-cnapconsulta)">
+    <g id="Component_1_24" data-name="Component 1 – 24" transform="translate(16 16)">
+      <g id="Ellipse_1" data-name="Ellipse 1" fill="rgba(167,211,255,0.25)" stroke="#fff" stroke-width="5" opacity="0.5">
+        <circle cx="232" cy="232" r="232" stroke="none"/>
+        <circle cx="232" cy="232" r="229.5" fill="none"/>
+      </g>
+    </g>
+    <g id="Tablet" transform="translate(128 88)">
+      <g id="Rectangle_1" data-name="Rectangle 1" fill="#1671bb" stroke="#fff" stroke-width="8">
+        <rect width="240" height="320" rx="30" stroke="none"/>
+        <rect x="4" y="4" width="232" height="312" rx="26" fill="none"/>
+      </g>
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="208" height="264" rx="30" transform="translate(16 16)" fill="#c7e5ff"/>
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="8" cy="8" r="8" transform="translate(112 292)" fill="#fff"/>
+    </g>
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(-13 -10)" fill="none" stroke="#707070" stroke-width="1" opacity="0.11">
+      <rect width="557" height="550" stroke="none"/>
+      <rect x="0.5" y="0.5" width="556" height="549" fill="none"/>
+    </g>
+    <g id="CNAP" transform="translate(168 124)">
+      <g id="Rectangle_3" data-name="Rectangle 3" fill="#fff" stroke="#102434" stroke-linecap="round" stroke-width="8">
+        <rect width="160" height="224" rx="30" stroke="none"/>
+        <rect x="4" y="4" width="152" height="216" rx="26" fill="none"/>
+      </g>
+      <line id="Line_3" data-name="Line 3" x2="88" transform="translate(40 100)" fill="none" stroke="#102434" stroke-linecap="round" stroke-width="8"/>
+      <line id="Line_4" data-name="Line 4" x2="88" transform="translate(40 124)" fill="none" stroke="#102434" stroke-linecap="round" stroke-width="8"/>
+      <line id="Line_5" data-name="Line 5" x2="88" transform="translate(40 148)" fill="none" stroke="#102434" stroke-linecap="round" stroke-width="8"/>
+      <g id="Rectangle_11" data-name="Rectangle 11" transform="translate(63 38)" fill="#c7e5ff" stroke="#1671bb" stroke-width="8">
+        <rect width="35" height="35" rx="10" stroke="none"/>
+        <rect x="4" y="4" width="27" height="27" rx="6" fill="none"/>
+      </g>
+    </g>
+    <g id="Lupa" transform="translate(199 183.868)">
+      <path id="Union_1" data-name="Union 1" d="M52.979,196.236V130.284a12.555,12.555,0,0,1,.1-1.606A64.83,64.83,0,0,1,0,64.871a64.889,64.889,0,0,1,124.646-25.25,64.947,64.947,0,0,1-34.523,85.025,64.322,64.322,0,0,1-12.407,3.831,12.54,12.54,0,0,1,.131,1.808v65.952a12.434,12.434,0,1,1-24.867,0ZM15.137,64.871A49.734,49.734,0,1,0,64.871,15.137,49.79,49.79,0,0,0,15.137,64.871Z" transform="translate(0.001 91.742) rotate(-45)" fill="#102434"/>
+      <circle id="Ellipse_5" data-name="Ellipse 5" cx="49.735" cy="49.735" r="49.735" transform="translate(21.407 91.742) rotate(-45)" fill="#fff" opacity="0.95"/>
+    </g>
+  </g>
+</svg>

@@ -25,9 +25,23 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/Content/css/animate.css",
+              "src/assets/Content/newDesing/css/libs/bootstrap.css",
+              "src/assets/Content/newDesing/font-awesome/css/font-awesome.min.css",
+              "src/assets/Content/css/jquery.dataTables.min.css",
+              "src/assets/Content/css/sass/menu-responsive.css",
+              "src/assets/Content/css/styles.css",
+              "src/assets/Content/newDesing/css/request-collapsible.css",
+              "src/assets/Content/css/sweetalert2.min.css",
+              "src/assets/Content/css/tippy.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {

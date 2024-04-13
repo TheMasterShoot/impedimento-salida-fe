@@ -1,0 +1,200 @@
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+    body {
+      font-family: "Open Sans", Arial;
+     
+    }
+    main.request {
+    background: #fff;
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px 0;
+    box-shadow: 0 1px 5px 1px rgba(0,0,0,0.2);
+}
+   
+    input.request {
+      display: none;
+      visibility: hidden;
+    }
+
+    label.request {
+      display: block;
+      padding: 0.5em;
+      text-align: left;
+      border-bottom: 1px solid #CCC;
+      color: #666;
+      width: 100%;
+    }
+
+    label.request:hover {
+      color: #014884;
+    }
+
+    label.request::before {
+      font-family: Consolas, monaco, monospace;
+      font-weight: bold;
+      font-size: 15px;
+      content: "-";
+      text-align: center;
+      vertical-align: text-top;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 3px;
+      background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
+    }
+
+    #expand {
+      height: 100%;
+      overflow: hidden;
+      transition: height 1s;
+      background-color: #ef4036;
+      /*background: url(../assets/images/edificio-pgr-azul-RGB-014884-blur.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: right;
+      background-repeat: no-repeat;*/
+      color: #FFF;
+    }
+
+    section.tables {
+      padding: 30px 20px;
+    }
+    #toggle-1:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-1:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }
+    #toggle-2:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-2:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }
+    #toggle-3:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-3:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }    
+    #toggle-4:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-4:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }
+    #toggle-5:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-5:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }
+    #toggle-6:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-6:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }
+    #toggle-7:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-7:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }    
+    #toggle-8:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-8:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }
+     #toggle-9:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-9:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }
+     #toggle-10:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-10:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }
+     #toggle-11:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-11:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }
+     #toggle-12:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-12:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }
+     #toggle-13:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-13:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }
+     #toggle-14:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-14:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }
+     #toggle-15:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-15:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }
+     #toggle-16:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-16:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }
+     #toggle-17:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-17:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }
+     #toggle-18:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle-18:checked ~ label::before {
+      content: "+";
+      text-align: center;
+    }
+
+
+    h2.requirement {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ef4036;
+    background-color: #fff;
+    width: 122px;
+    padding: 10px;
+    margin-left: -20px;
+}

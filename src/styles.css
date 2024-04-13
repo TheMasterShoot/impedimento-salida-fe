@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tahoma:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+ 
+  --font-inter: Inter;
+  --font-roboto: Roboto;
+  --font-tahoma: Tahoma;
+
+
+  --font-size-sm: 14px;
+  --font-size-sm-5: 13.5px;
+  --font-size-smi: 13px;
+  --font-size-sm-6: 13.6px;
+  --font-size-sm-1: 13.1px;
+  --font-size-mini: 15px;
+  --font-size-lg: 18px;
+  --font-size-2xs: 11px;
+  --font-size-xs-5: 11.5px;
+  --font-size-3xs: 10px;
+
+ 
+  --color-white: #fff;
+  --color-gray-100: #757575;
+  --color-gray-200: rgba(255, 255, 255, 0.05);
+  --color-silver: #b9b8b8;
+  --color-darkslategray: #333;
+  --color-steelblue-100: #428bca;
+  --color-steelblue-200: #0d68b2;
+  --color-gainsboro-100: #e3e3e3;
+  --color-gainsboro-200: #ddd;
+  --color-gainsboro-300: #dbdbdb;
+  --color-aliceblue: rgba(227, 242, 253, 0.31);
+  --color-lightskyblue: #93cfff;
+  --color-darkslateblue-100: #044b85;
+  --color-darkslateblue-200: #014984;
+  --color-darkslateblue-300: #003b81;
+
+  --gap-11xl: 30px;
+  --gap-10xs: 3px;
+  --gap-lg: 18px;
+  --gap-9xs: 4px;
+  --gap-479xl: 498px;
+  --gap-3xs: 10px;
+  --gap-8xs: 5px;
+  --gap-2xl: 21px;
+  --gap-6xs: 7px;
+
+  --padding-27xl: 46px;
+  --padding-187xl: 206px;
+  --padding-12xs: 1px;
+  --padding-lgi-4: 19.4px;
+  --padding-9xl-1: 28.1px;
+  --padding-9xl: 28px;
+  --padding-9xs-8: 3.8px;
+  --padding-3xs: 10px;
+  --padding-sm: 14px;
+  --padding-12xs-5: 0.5px;
+  --padding-2xl-8: 21.8px;
+  --padding-7xl-5: 26.5px;
+  --padding-1889xl: 1908px;
+  --padding-smi: 13px;
+  --padding-10xs: 3px;
+  --padding-8xs-6: 4.6px;
+  --padding-xl-5: 20.5px;
+  --padding-9xs: 4px;
+  --padding-3xl: 22px;
+
+  --br-xl: 20px;
+} */

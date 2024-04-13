@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="496" height="496" viewBox="0 0 496 496">
+  <defs>
+    <clipPath id="clip-certFirmaDoc">
+      <rect width="496" height="496"/>
+    </clipPath>
+  </defs>
+  <g id="certFirmaDoc" clip-path="url(#clip-certFirmaDoc)">
+    <g id="Component_1_16" data-name="Component 1 – 16" transform="translate(16 16)">
+      <g id="Ellipse_1" data-name="Ellipse 1" fill="rgba(167,211,255,0.25)" stroke="#fff" stroke-width="5" opacity="0.5">
+        <circle cx="232" cy="232" r="232" stroke="none"/>
+        <circle cx="232" cy="232" r="229.5" fill="none"/>
+      </g>
+    </g>
+    <g id="CertificacionFirmaDocumento" transform="translate(147 106)">
+      <g id="Rectangle_3" data-name="Rectangle 3" fill="#fff" stroke="#102434" stroke-linecap="round" stroke-width="8">
+        <rect width="202" height="284" rx="30" stroke="none"/>
+        <rect x="4" y="4" width="194" height="276" rx="26" fill="none"/>
+      </g>
+      <g id="Group_71" data-name="Group 71" transform="translate(-156 -93)">
+        <line id="Line_3" data-name="Line 3" x2="111.289" transform="translate(201.988 170.503)" fill="none" stroke="#102434" stroke-linecap="round" stroke-width="8"/>
+        <line id="Line_16" data-name="Line 16" x2="111.289" transform="translate(201.988 140.152)" fill="none" stroke="#102434" stroke-linecap="round" stroke-width="8"/>
+        <line id="Line_4" data-name="Line 4" x2="111.289" transform="translate(201.988 200.855)" fill="none" stroke="#102434" stroke-linecap="round" stroke-width="8"/>
+        <g id="Group_15" data-name="Group 15" transform="translate(201.988 236.598)">
+          <path id="Path_11" data-name="Path 11" d="M1301.336,952.69s30.053-30.462,16.7-9.748,19.081-11.576,19.081-11.576,15.265-13.4-12.4,26.807-.086-8.821-16.7,0,11.853-8.85,38.639-11.576,58.674,1.218,63.921-8.53" transform="translate(-1301.336 -929.222)" fill="none" stroke="#1671bb" stroke-linecap="round" stroke-width="3"/>
+          <path id="Path_12" data-name="Path 12" d="M1346.868,923.655s-5.98,29.648,4.186,15.417,1.2-17.2,7.176-5.337S1369,923.655,1369,923.655s-4.186,28.462,5.382,15.417,14.353-23.125,11.96-10.08-5.382,32.02,3.588,10.08,1.794-4.744,11.961-5.337" transform="translate(-1301.065 -920.378)" fill="none" stroke="#1671bb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Group_17" data-name="Group 17" transform="translate(221.59 282.115)">
+          <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(5.41 5.935)" fill="#fff" stroke="#102434" stroke-width="5">
+            <circle cx="30.351" cy="30.351" r="30.351" stroke="none"/>
+            <circle cx="30.351" cy="30.351" r="27.851" fill="none"/>
+          </g>
+          <circle id="Ellipse_24" data-name="Ellipse 24" cx="17.5" cy="17.5" r="17.5" transform="translate(18.41 18.885)" fill="#102434"/>
+          <g id="Group_18" data-name="Group 18" transform="translate(-53.859 -137.454)">
+            <path id="Path_15" data-name="Path 15" d="M158.663,178.892a.58.58,0,0,1-.412-.171l-1.356-1.356a.583.583,0,0,1,0-.824l6.939-6.939a2.512,2.512,0,1,0-3.552-3.553l-1.356,1.356a.583.583,0,0,1-.412.171h0a.583.583,0,0,1-.412-.171l-1.356-1.356a.583.583,0,0,1,0-.824l1.356-1.356a5.6,5.6,0,1,1,7.914,7.914l-6.939,6.939A.581.581,0,0,1,158.663,178.892Z" transform="translate(-66.237 -0.112)" fill="#c7e5ff"/>
+            <path id="Path_16" data-name="Path 16" d="M83.744,185.385a5.6,5.6,0,0,1-4.48-8.95.581.581,0,0,1,.137-.218l2.444-2.444-2.164-2.165a.579.579,0,0,1-.117-.167,5.6,5.6,0,0,1,8.019-7.8l.031.029,7.11,7.11a.583.583,0,0,1,0,.824l-1.376,1.376a.583.583,0,0,1-.824,0l-7.11-7.11a.589.589,0,0,1-.09-.115,2.512,2.512,0,0,0-3.436,3.652l2.159,2.158,2.464-2.464a.584.584,0,0,1,.412-.171h0a.583.583,0,0,1,.412.171l1.357,1.357a.583.583,0,0,1,0,.824l-2.444,2.444,8.028,8.038a2.484,2.484,0,0,0,1.526.516,2.512,2.512,0,0,0,1.8-4.265L97.578,178l-1.356-1.356a.583.583,0,0,1-.018-.806l.019-.02,1.356-1.356a.583.583,0,0,1,.825,0l1.356,1.356a5.6,5.6,0,0,1-7.612,8.194l-.03-.028-8.089-8.032-2.118,2.118a2.512,2.512,0,0,0,3.61,3.494l1.584-1.584a.583.583,0,0,1,.824,0l1.357,1.357a.583.583,0,0,1,0,.824l-1.706,1.706a.587.587,0,0,1-.07.06A5.576,5.576,0,0,1,83.744,185.385Z" fill="#c7e5ff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

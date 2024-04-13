@@ -1,0 +1,306 @@
+.divuwy {
+    width: 1px;
+    position: undefined;
+    height: 1px;
+    margin-left: 11px;
+  }
+  .icon,
+  .inicio {
+    position: relative;
+    flex-shrink: 0;
+  }
+  .icon {
+    width: 12.1px;
+    height: 13px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .inicio {
+    width: 34.2px;
+    line-height: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    height: 20px;
+  }
+  .item-link {
+    width: 97px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-3xs) var(--padding-2xl-8) var(--padding-3xs)
+      var(--padding-3xl);
+    box-sizing: border-box;
+    gap: var(--gap-6xs);
+  }
+  .item-link1 {
+    width: 79.3px;
+    position: relative;
+    line-height: 20px;
+    font-weight: 600;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .item-link1,
+  .item-link2,
+  .item-link3 {
+    display: flex;
+    align-items: center;
+  }
+  .item-link2 {
+    width: 142.1px;
+    position: relative;
+    line-height: 20px;
+    font-weight: 600;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .item-link3 {
+    width: 155.9px;
+  }
+  .item-link3,
+  .item-link4,
+  .item-link5 {
+    position: relative;
+    line-height: 20px;
+    font-weight: 600;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .item-link4 {
+    width: 87.9px;
+    display: flex;
+    align-items: center;
+  }
+  .item-link5 {
+    width: 132.3px;
+  }
+  .item-link5,
+  .item-link6,
+  .section-list {
+    display: flex;
+    align-items: center;
+  }
+  .item-link6 {
+    width: 83.3px;
+    position: relative;
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--color-steelblue-100);
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .section-list {
+    width: 908.7px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: var(--gap-2xl);
+  }
+  .frame2 {
+    position: absolute;
+    top: 138.8px;
+    left: -15px;
+    width: 1298.7px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .link {
+    width: 1935px;
+    position: relative;
+    background-color: var(--color-gainsboro-100);
+    height: 1px;
+  }
+  .img-header-rep-dompng-icon,
+  .logo-mp-sgsvg-fill-icon {
+    width: 286.3px;
+    position: relative;
+    height: 99.9px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  .img-header-rep-dompng-icon {
+    width: 180px;
+    height: 41.8px;
+  }
+  .frame6 {
+    width: 220px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .link-icon {
+    width: 12px;
+    position: relative;
+    height: 14px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  .input {
+    width: 170px;
+    border: 0;
+    background-color: transparent;
+    font-family: var(--font-tahoma);
+    font-size: var(--font-size-3xs);
+    color: var(--color-gray-100);
+  }
+  .button-icon {
+    width: 30px;
+    position: relative;
+    height: 30px;
+    object-fit: cover;
+  }
+  .form,
+  .frame5,
+  .frame7 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .frame7 {
+    height: 30px;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+  }
+  .form,
+  .frame5 {
+    width: 232px;
+  }
+  .form {
+    height: 34px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0 var(--padding-9xs);
+    box-sizing: border-box;
+    gap: var(--gap-3xs);
+  }
+  .frame5 {
+    height: 80.8px;
+    overflow: hidden;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-8xs);
+  }
+  .link-inicio {
+    width: 33.9px;
+    line-height: 15.71px;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 15.7px;
+  }
+  .div,
+  .link-contacto,
+  .link-inicio,
+  .link-mapa {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .div {
+    width: 2.2px;
+    font-size: var(--font-size-xs-5);
+    line-height: 16.38px;
+    color: var(--color-darkslategray);
+    height: 16.4px;
+  }
+  .link-contacto,
+  .link-mapa {
+    width: 88.1px;
+    line-height: 15.71px;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 15.7px;
+  }
+  .link-contacto {
+    width: 61.7px;
+  }
+  .divhidden-xs,
+  .nav {
+    box-sizing: border-box;
+  }
+  .nav {
+    width: 232px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--padding-10xs) var(--padding-8xs-6) var(--padding-10xs)
+      var(--padding-xl-5);
+    gap: var(--gap-9xs);
+  }
+  .divhidden-xs {
+    width: 395px;
+    height: 136.8px;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 0 var(--padding-smi);
+    gap: var(--gap-3xs);
+  }
+  .divhidden-xs,
+  .frame3,
+  .frame4 {
+    overflow: hidden;
+    display: flex;
+  }
+  .frame4 {
+    width: 1180px;
+    height: 136.8px;
+    flex-shrink: 0;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-479xl);
+  }
+  .frame3 {
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 1935px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    font-size: var(--font-size-2xs);
+    color: var(--color-darkslateblue-300);
+    font-family: var(--font-roboto);
+  }
+  .divheader,
+  .frame1 {
+    width: 1366px;
+    height: 186px;
+    box-sizing: border-box;
+  }
+  .divheader {
+    position: relative;
+    background-color: var(--color-gainsboro-300);
+    border-bottom: 3px solid var(--color-darkslateblue-100);
+    margin-left: -12px;
+  }
+  .frame1 {
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-1889xl) 0 0;
+    text-align: left;
+    font-size: var(--font-size-smi);
+    color: var(--color-darkslateblue-200);
+    font-family: var(--font-inter);
+  }
+  
