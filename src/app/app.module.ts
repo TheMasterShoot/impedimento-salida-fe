@@ -5,31 +5,30 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CertificadoComponent } from './components/certificado/certificado.component';
 import { FormsModule } from '@angular/forms';
-import { LoginComponent } from './components/login/login.component';
 import { SolicitudesComponent } from './components/solicitudes/solicitudes.component';
 import { HomeComponent } from './components/home/home.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { AdministracionModule } from './modules/administracion/administracion.module';
+import { HttpClientModule } from '@angular/common/http';
+import { DatePipe } from '@angular/common';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CertificadoComponent,
-    LoginComponent,
     SolicitudesComponent,
     HomeComponent,
-    HeaderComponent,
-    FooterComponent,
     BannerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AdministracionModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ DatePipe,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
