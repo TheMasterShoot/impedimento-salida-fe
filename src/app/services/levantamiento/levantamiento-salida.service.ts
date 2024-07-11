@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -11,9 +11,10 @@ export class LevantamientoSalidaService {
 
   constructor(private http:HttpClient) { }
 
-  createSolicitudLevantimiento(solicitud: any): Observable<any> {
+  createSolicitudLevantimiento(solicitud: FormData): Observable<any> {
     let direccion = this.url + 'SolicitudLevantamiento';
-    return this.http.post<any>(direccion, solicitud);
+    const headers = new HttpHeaders({ 'enctype': 'multipart/form-data' });
+    return this.http.post<any>(direccion, solicitud, { headers });
   }
 
 }
