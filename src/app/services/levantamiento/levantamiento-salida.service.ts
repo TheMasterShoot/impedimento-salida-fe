@@ -17,4 +17,25 @@ export class LevantamientoSalidaService {
     return this.http.post<any>(direccion, solicitud, { headers });
   }
 
+  getSolicitudesLevantamiento(): Observable<any[]> {
+    let direccion = this.url + 'SolicitudLevantamiento';
+    return this.http.get<any[]>(direccion);
+  }
+  
+  getSolicitudLevantamientoById(id: any): Observable<any> {
+    let direccion = this.url + 'SolicitudLevantamiento/' + id;
+    return this.http.get<any>(direccion);
+  }
+
+  updateSolicitudLevantamiento(levantamiento: any): Observable<any> {
+    let direccion = this.url + 'SolicitudLevantamiento/' + levantamiento.id;
+    // const headers = new HttpHeaders({ 'enctype': 'multipart/form-data' });
+    return this.http.put<any>(direccion, levantamiento);
+  }
+
+  // patchSolicitudLevantamiento(id: number, operations: Operation[]){
+  //   let direccion = this.url + 'SolicitudLevantamiento/' + id;
+  //   return this.http.patch(direccion, operations);
+  // }
+
 }

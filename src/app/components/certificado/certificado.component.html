@@ -29,18 +29,20 @@
                     <div id="home" class="tab-pane fade active in">
 
                         <div class="row">
+                            <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
                             <div class="col-md-6">
                                 <div class="row queryCard">
                                     <div class="cardQuery__group">
                                         <div class="control-label col-md-12 labelCAS">Consulte su Código de Adquisición
                                             de Servicio (CAS)</div>
                                         <div class="col-md-12">
-                                            <form action="/CertificadoNoAntecedentesPenales/VisualizarCNAP"
-                                                id="formulario_cnap" method="post">
+                                            <!-- <form [formGroup]="formulario" (ngSubmit)="onSubmit()"
+                                            action="/CertificadoNoAntecedentesPenales/VisualizarCNAP"
+                                            id="formulario_cnap" method="post"> -->
                                                 <div class="input-group">
                                                     <input type="text" id="NumeroCas" class="form-control searchCAS"
                                                         placeholder="Introduzca número de referencia CAS"
-                                                        name="numeroCas">
+                                                        name="numeroCas" formControlName="cas">
                                                     <div class="input-group-btn">
                                                         <button class="btn  btn-search searchCAS" id="Fake"
                                                             type="submit"
@@ -49,7 +51,7 @@
                                                                 class="fa fa-search"></i> Consultar CAS</button>
                                                     </div>
                                                 </div>
-                                            </form>
+                                            <!-- </form> -->
                                         </div>
                                         <div class="col-lg-12 queryCard__groupFooter" id="cuadroazul">
                                             <span class="queryCard__groupFooter--text"> Si aún no tiene su código
@@ -82,7 +84,7 @@
                             <div class="col-md-6 importantCASCard">
                                 <!-- aqui van los demas elementos del formulario -->
                                 <div class="card-body">
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <label for="exampleInputFile">Carta de solicitud</label>
                                         <div class="input-group">
                                         <div class="custom-file input-group-append">
@@ -90,16 +92,20 @@
                                             <input type="file" class="custom-file-input form-control" id="exampleInputFile">
                                         </div>
                                         </div>
-                                    </div>
-                                    <!-- <div class="form-group">
-                                        <label for="exampleInputEmail1">Email</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese email">
                                     </div> -->
+                                    <div class="alert alert-danger">
+                                        <strong>Este código de impuesto no corresponde a este número de documento: 40200750673. </strong>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese email" formControlName="email">
+                                    </div>
                                     <div class="card-footer">
                                         <button type="submit" class="btn btn-primary pull-right">Enviar</button>
                                       </div>
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                     <div id="menu1" class="tab-pane fade">
