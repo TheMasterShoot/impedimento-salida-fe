@@ -1,8 +1,10 @@
 import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { CiudadanoService } from 'src/app/services/ciudadano/ciudadano.service';
 import { LevantamientoSalidaService } from 'src/app/services/levantamiento/levantamiento-salida.service';
+import Swal from 'sweetalert2';
 
 
 @Component({
@@ -22,6 +24,7 @@ export class SolicitudesComponent implements OnInit {
 
   constructor(
     private datePipe: DatePipe,
+    private router: Router,
     private ciudadanoService: CiudadanoService,
     private levatamientoSalidaService: LevantamientoSalidaService
   ){
@@ -98,9 +101,18 @@ export class SolicitudesComponent implements OnInit {
           formData.append('apellido', this.solicitud.apellido);
           formData.append('fechaSolicitud', this.solicitud.fechaSolicitud);
 
-      this.levatamientoSalidaService.createSolicitudLevantimiento(formData).subscribe((data: any) => 
-        console.log(data));
-  
+      this.levatamientoSalidaService.createSolicitudLevantimiento(formData).subscribe((data: any) => {
+        // this.sendEmail();
+        Swal.fire({
+          title: "Solicitud enviada!",
+          text: "Puede seguir el estatus de su solicitud en Consultar Servicios en Línea",
+          icon: "success"
+        }).then((result) => {
+          if (result.isConfirmed) {
+            this.router.navigate(['/home']);
+          }
+        });
+      });
     }
   }
 }

@@ -1,8 +1,10 @@
 import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
 import { CertificacionExistenciaService } from 'src/app/services/certificado/certificado-existencia.service';
 import { CiudadanoService } from 'src/app/services/ciudadano/ciudadano.service';
+import Swal from 'sweetalert2';
 
 
 @Component({
@@ -21,6 +23,7 @@ export class CertificadoComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private datePipe: DatePipe,
+    private router: Router,
     private ciudadanoService: CiudadanoService,
     private certificacionService: CertificacionExistenciaService
   ) { 
@@ -60,6 +63,15 @@ export class CertificadoComponent implements OnInit {
 
       this.certificacionService.addCertificacion(certificacion).subscribe((data: any) => {
         // this.sendEmail();
+        Swal.fire({
+          title: "Solicitud enviada!",
+          text: "Puede seguir el estatus de su solicitud en Consultar Servicios en Línea",
+          icon: "success"
+        }).then((result) => {
+          if (result.isConfirmed) {
+            this.router.navigate(['/home']);
+          }
+        });
       });
     }
   }
