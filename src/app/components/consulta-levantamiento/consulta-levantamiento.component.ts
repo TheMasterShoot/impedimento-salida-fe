@@ -48,7 +48,7 @@ export class ConsultaLevantamientoComponent {
         pageLength: 10,
         searching: false,
         processing: true,
-        order: [[2, 'desc']],
+        order: [[0, 'desc']],
         language: {
           url: '//cdn.datatables.net/plug-ins/2.0.8/i18n/es-ES.json',
       },

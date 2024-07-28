@@ -1,10 +1,10 @@
 import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { compare } from 'fast-json-patch';
 import { take } from 'rxjs';
 import { CiudadanoService } from 'src/app/services/ciudadano/ciudadano.service';
+import { EmailService } from 'src/app/services/email/email.service';
 import { LevantamientoSalidaService } from 'src/app/services/levantamiento/levantamiento-salida.service';
 import { RechazoService } from 'src/app/services/rechazo/rechazo.service';
 import Swal from 'sweetalert2';
@@ -33,6 +33,7 @@ export class SolicitudesComponent implements OnInit {
     private datePipe: DatePipe,
     private route: ActivatedRoute,
     private router: Router,
+    private emailService: EmailService,
     private rechazoService: RechazoService,
     private ciudadanoService: CiudadanoService,
     private levatamientoSalidaService: LevantamientoSalidaService
@@ -51,19 +52,21 @@ export class SolicitudesComponent implements OnInit {
   ngOnInit() {
     this.route.params.pipe(take(1)).subscribe((params) => {
       let id = params['id'];
-      this.levatamientoSalidaService.getSolicitudLevantamientoById(id).subscribe(data => {
-        if(data){
-          this.solicitud = Object.assign({}, data);
-          this.solicitudOriginal = data;
-          this.activo = true;
-
-          if (this.solicitud) {
-            this.formulario.patchValue({
-              email: this.solicitud.email
-            })
+      if(id){
+        this.levatamientoSalidaService.getSolicitudLevantamientoById(id).subscribe(data => {
+          if(data){
+            this.solicitud = Object.assign({}, data);
+            this.solicitudOriginal = data;
+            this.activo = true;
+  
+            if (this.solicitud) {
+              this.formulario.patchValue({
+                email: this.solicitud.email
+              })
+            }
           }
-        }
-      });
+        });
+      }
     });
     
     this.ciudadanoService.getCiudadanoById(this.id).subscribe((data: any) => {
@@ -100,7 +103,7 @@ export class SolicitudesComponent implements OnInit {
     this.solicitud.nombre = this.ciudadano.nombre;
     this.solicitud.apellido = this.ciudadano.apellido;
 
-    if(this.solicitud){
+    if(this.solicitud.id){
       this.solicitud.fechaSolicitud = this.solicitud.fechaSolicitud;
 
       const formData = new FormData();
@@ -129,7 +132,6 @@ export class SolicitudesComponent implements OnInit {
 
       this.levatamientoSalidaService.updateSolicitudLevantamiento(this.solicitud.id, formData).subscribe((data: any) => { 
         this.eliminarRechazo();
-        // this.sendEmail();
           Swal.fire({
             title: "Solicitud actualizada!",
             text: "Puede seguir el estatus de su solicitud en Consultar Servicios en Línea",
@@ -170,7 +172,7 @@ export class SolicitudesComponent implements OnInit {
             formData.append('fechaSolicitud', this.solicitud.fechaSolicitud);
   
         this.levatamientoSalidaService.createSolicitudLevantimiento(formData).subscribe((data: any) => {
-          // this.sendEmail();
+          this.sendEmail(data.email, data.nombre, data.apellido, data.fechaSolicitud, data.id);
           Swal.fire({
             title: "Solicitud enviada!",
             text: "Puede seguir el estatus de su solicitud en Consultar Servicios en Línea",
@@ -195,5 +197,74 @@ export class SolicitudesComponent implements OnInit {
         console.log('Elemento eliminado:', data);
       });
     }
+  }
+
+  sendEmail(destino:string, nombre:string, apellido:string, fecSol:any, codigo:number){
+    const email = {
+      para: `${destino}`,
+      asunto: 'Levantamiento de Impedimento de Salida Estatus de Solicitud',
+      cuerpo:`
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .encabezado {
+            font-size: 10px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header, .footer {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        .details {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+        <div class="header">
+            <h1>Procuraduría General de la República</h1>
+            <p class="encabezado">Ave. Jiménez Moya esq. Juan Ventura Simó, Centro de los Héroes, Santo Domingo, República Dominicana.</p>
+            <p class="encabezado">Tel.: 809-533-3522 ext. 133, 2002, 1125</p>
+            <p class="encabezado">Email: mesadeayuda@pgr.gob.do</p>
+        </div>
+        <hr>
+        <br>
+        <div class="content">
+            <p><strong>Estimado/a ${nombre + ' ' + apellido}:</strong></p>
+            <p>Nos dirigimos a usted para informarle sobre el estatus de su solicitud presentada el ${this.datePipe.transform(fecSol, 'dd/MM/yyyy')} para Levantamiento de Impedimento de Salida.</p>
+            <div class="details">
+                <p>Estatus de su Solicitud: <strong>Pendiente</strong></p>
+                <p><strong>Detalles:</strong></p>
+                <ul>
+                    <li>Número de Solicitud:<strong>${codigo}</strong></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Para más información, no dude en contactarnos a través de los medios mencionados arriba.</p>
+        </div>
+</body>
+      
+      `
+    }
+    
+    this.emailService.sendEmail(email).subscribe();
+
   }
 }
