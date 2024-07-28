@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Operation } from 'fast-json-patch';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -27,15 +28,18 @@ export class LevantamientoSalidaService {
     return this.http.get<any>(direccion);
   }
 
-  updateSolicitudLevantamiento(levantamiento: any): Observable<any> {
-    let direccion = this.url + 'SolicitudLevantamiento/' + levantamiento.id;
-    // const headers = new HttpHeaders({ 'enctype': 'multipart/form-data' });
-    return this.http.put<any>(direccion, levantamiento);
+  updateSolicitudLevantamiento(id: number, formData: FormData): Observable<any> {
+    let direccion = this.url + 'SolicitudLevantamiento/' + id;
+    const headers = new HttpHeaders({ 'enctype': 'multipart/form-data' });
+    return this.http.put<any>(direccion, formData, { headers });
   }
 
   // patchSolicitudLevantamiento(id: number, operations: Operation[]){
   //   let direccion = this.url + 'SolicitudLevantamiento/' + id;
-  //   return this.http.patch(direccion, operations);
+  //   const formData = new FormData();
+  //   formData.append('operations', JSON.stringify(operations));
+  //   const headers = new HttpHeaders({ 'enctype': 'multipart/form-data' });
+  //   return this.http.patch(direccion, formData, { headers });
   // }
 
 }

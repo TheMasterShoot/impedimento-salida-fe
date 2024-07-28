@@ -1,0 +1,56 @@
+<section class="servicios">
+    <div class="container post4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="/">
+                    <i class="fa fa-home" aria-hidden="true" style="font-size: 17px; padding-right:5px;"></i>
+                    Inicio
+                </a>
+            </li>
+            <li class="breadcrumb-item active">Consultas / </li>
+        </ol>
+        <div class="panel-body container-content" id="countDonw">
+
+<div class="panel-body container-content" id="countDonw">
+                
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12" id="hist">
+            <h2><span>histórico de levantamientos de impedimento de salida</span></h2>
+        </div>
+    </div>
+    <hr>
+    <br>
+
+     <div class="dataTables_wrapper no-footer dataTables_filter">
+     <table *ngIf="levantamientos.length" datatable [dtOptions]="dtOptions" class="table display cardViews dataTable no-footer">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Imputado</th>
+                    <th>Fecha</th>
+                    <th>Estado</th>
+                    <th>Gestionar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of levantamientos" class="even">
+                    <td>{{item.id}}</td>
+                    <td>{{item.nombre + ' ' + item.apellido}}</td>
+                    <td>{{item.fechaSolicitud}}</td>
+                    <td>{{item.estatusDesc}}</td> 
+                    <td class="project-actions">
+                        <button [disabled]="item.estatusid !== 5" class="btn btn-info btn-sm" [routerLink]="[ '/levantamiento-impedimento-salida', item.id ]">
+                            Editar
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+   
+</div>
+</div>
+</section>    
+            

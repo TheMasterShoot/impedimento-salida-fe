@@ -1,0 +1,50 @@
+<section class="servicios">
+    <div class="container post4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="/">
+                    <i class="fa fa-home" aria-hidden="true" style="font-size: 17px; padding-right:5px;"></i>
+                    Inicio
+                </a>
+            </li>
+            <li class="breadcrumb-item active">Consultas / </li>
+        </ol>
+        <div class="panel-body container-content" id="countDonw">
+
+<div class="panel-body container-content" id="countDonw">
+                
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12" id="hist">
+            <h2><span>histórico de certificaciones de impedimento de salida</span></h2>
+        </div>
+    </div>
+    <hr>
+    <br>
+
+     <div class="card-body">
+     <table *ngIf="certificaciones.length" datatable [dtOptions]="dtOptions" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Cas</th>
+                    <th>Imputado</th>
+                    <th>Fecha</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let certificacion of certificaciones">
+                    <td>{{certificacion.cas}}</td>
+                    <td>{{certificacion.nombre + ' ' + certificacion.apellido}}</td>
+                    <td>{{certificacion.fechaSolicitud}}</td>
+                    <td>{{certificacion.estatusDesc}}</td> 
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+   
+</div>
+</div>
+</section>    
+            

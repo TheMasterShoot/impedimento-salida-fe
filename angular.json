@@ -35,12 +35,15 @@
               "src/assets/Content/css/styles.css",
               "src/assets/Content/newDesing/css/request-collapsible.css",
               "src/assets/Content/css/sweetalert2.min.css",
-              "src/assets/Content/css/tippy.css"
+              "src/assets/Content/css/tippy.css",
+              "node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/@popperjs/core/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/datatables.net/js/jquery.dataTables.min.js",
+              "node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"
             ]
           },
           "configurations": {

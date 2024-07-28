@@ -1,0 +1,396 @@
+
+.tippy-popper[x-placement^=right] [x-arrow] {
+    border-right: 10px solid #333 !important;
+    border-top: 0px solid transparent !important;
+    border-bottom: 9px solid transparent !important;
+    border-left: 29px solid transparent !important;
+    transform: rotate(-42deg) !important;
+    left: 88px !important;
+    margin: 6px 0 !important;
+  }
+  
+  .card-alert-danger{
+    display:flex;
+  }
+  
+  .alert-danger{
+    border-radius:20px;
+  }
+  
+  .alert .fa-eye, .alert a{
+    color:#fff!important;
+  }
+  .alert a {
+    text-decoration:none;
+        background:#a94442;
+        border:1px solid#600c0c;
+        padding:10px 20px;
+        border-radius:20px;
+  }
+  
+  .alert a:hover {
+    background: #700e0e;
+  }
+  
+  .contenido_requisitos p {
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  
+  .contenido_requisitos {
+    padding: 15px;
+    text-align: justify !important;
+    background-color: white !important;
+  }
+  
+    .contenido_requisitos ul {
+        padding: 9px 31px !important;
+    }
+  
+  
+  #accordion h4 {
+    color: #014984;
+    padding-top: 30px !important;
+    font-weight: 600;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  ul.important li {
+    list-style-type: circle !important;
+  }
+  
+  #nombreCompleto {
+    font-weight: bold;
+    font-size: 21px;
+    padding-top: 15px;
+  }
+  
+  
+  
+  /*//// -- INICIO DE MODALES - MANUS STARLIN -- ////*/
+  .modal-content {
+    text-align: center;
+    background-image: url(/assets/Content/images/mp-popup-web.svg );
+    background-size: cover;
+    background-position: right;
+    z-index: 1000;
+    /*top: 100px;*/
+  }
+  
+  .modal-body {
+    position: relative;
+    color: #fff;
+    padding: 0 !important;
+  }
+  
+  .modal-header {
+    min-height: 16.428571429px;
+    border-bottom: none !important;
+    width: inherit;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /*.text-shadow {
+    padding:0 15px;
+  }*/
+  
+  .mainInformationCenter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mainInformationStyle {
+    backdrop-filter: blur(15px);
+    border-radius: 1rem;
+    background: rgb(48 101 147 / 70%);
+    padding: 0 20px;
+  }
+  
+  h5 {
+    font-size: 21px !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    margin-top: 5px !important;
+  }
+  
+  .confirmar {
+    background: white !important;
+    color: #014984;
+    z-index: 2;
+    width: 115px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  
+  span.persona {
+    display: block;
+    text-align: center;
+  }
+  
+  .modal-title {
+    margin: 30px 0;
+    line-height: 1.428571429;
+    text-align: center;
+  }
+  
+  .modal-footer {
+    padding: 0 !important;
+    text-align: right;
+    border-top: none;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  p.entrega-certificacion {
+    font-size: 20px !important;
+  }
+  
+  
+  .btn-primary:hover, .btn-primary:focus {
+    background: #0d68b2 !important;
+    color: #fff;
+    border: 2px solid#fff;
+  }
+  
+  .cardAvisoApostillar, .mainInformationStyle {
+    box-shadow: 3px 3px 5px 0 rgb(0 0 0 / 20%);
+  }
+  
+  
+  .avisoApostillar, .cardAvisoApostillar {
+    background: #2d6390;
+  }
+  
+  .cardAvisoApostillar {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+  }
+  
+  
+  
+  .avisoApostillar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+  
+  .avisoApostillar__title {
+    width: 100%;
+    margin-top: -11px;
+    padding: 4px;
+  }
+  
+    .avisoApostillar__title h1 {
+        margin: 7px -20px 10px -20px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+        background: #600c0c;
+        padding: 20px 0 15px 0;
+    }
+  
+  .avisoApostillar__body--textoAviso, span.destacar {
+    font-size: 1.4rem;
+  }
+  
+  .avisoApostillar__body--textoAviso {
+    color: #fff;
+    text-align: justify !important;
+  }
+  
+  .certificacionCancilleria {
+    font-weight: 600;
+  }
+  
+  .presencial {
+    text-transform: uppercase;
+  }
+  
+  
+  
+  .avisoApostillar__footer--avisoNoGenerar {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+  
+  .avisoApostillar__btnCAC {
+    font-weight: 700;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .avisoApostillar__btnCAC--textBtn {
+    margin-left: 3px;
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  
+  .avisoApostillar__btnCAC:hover {
+    color: #000;
+  }
+  
+  
+  
+  type[type=submit].btn.searchCAS:hover {
+    background: #092b50 !important;
+    color: #fff;
+  }
+  
+  a.btn-aqui {
+    background: #fff;
+    padding: 5px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-decoration: none;
+    color: #014984;
+  }
+  
+  a.btn-aqui:hover {
+    background: #2190ea;
+    padding: 5px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 10px;
+    color:#fff;
+  }
+  
+  #nombreCompleto {
+    font-weight: bold;
+    font-size: 21px;
+    padding-top: 15px;
+  }
+  
+  span.persona {
+    display: block;
+    text-align: center;
+  }
+
+
+/* ****************************************************************************************** */
+  .azul-claro, .azul-oscuro {
+    color: #014984!important;
+}
+
+.azul-claro {
+    background: #9bc4f3!important;
+    
+}
+
+.azul-oscuro {
+    background: #83afe2!important;
+}
+
+.boton-tarjeta{
+  background:#fff;
+}
+
+.btn-usar{
+  padding:4px 11px !important;
+}
+
+
+.botones-pago {
+  cursor: pointer;
+  width: 25px !important;
+  border-radius: 50px;
+}
+
+.botones-pagoN {
+  cursor: default;
+  background: transparent;
+  border: none;
+  width: 25px !important;
+  border-radius: 50px;
+}
+
+
+.boton-pago-predeterminada {
+  background: transparent;
+}
+
+
+  .boton-pago-predeterminada:hover {
+      background: rgba(1, 73, 132, .3);
+  }
+
+
+.modal-bodyy {
+  position: relative;
+  padding: 20px;
+  background: #fff;
+}
+
+.casVoucher {
+  padding: 15px;
+  background: #014884;
+  color: #fff;
+  border-radius: 9px;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.cisVoucher {
+  text-align: center;
+  padding: 15px;
+  background: #00a49d;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.detalle {
+  color: rgb(196, 133, 14);
+  padding: 10px 0px;
+  font-size: 15px;
+  color: #ddd;
+}
+
+.leyenda {
+ background:#014984;
+  color: #fff;
+  padding: 13px ;
+  border-radius: 2rem;
+}
+
+.rowInfo:nth-child(2n){
+ margin:0 10px;
+}
+
+.modal-body {
+  position: relative;
+  padding: 20px;
+  background: #fff;
+}
+
+.btn-primary-modal {
+  background-color: transparent !important;
+  color: #fff;
+  border: solid 2px;
+  font-weight: 600;
+  border-radius: 20px;
+}

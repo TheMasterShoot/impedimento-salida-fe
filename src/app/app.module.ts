@@ -8,9 +8,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SolicitudesComponent } from './components/solicitudes/solicitudes.component';
 import { HomeComponent } from './components/home/home.component';
 import { BannerComponent } from './components/banner/banner.component';
-import { AdministracionModule } from './modules/administracion/administracion.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
+import { ConsultaExistenciaComponent } from './components/consulta-existencia/consulta-existencia.component';
+import { ConsultaLevantamientoComponent } from './components/consulta-levantamiento/consulta-levantamiento.component';
+import { DataTablesModule } from 'angular-datatables';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { DatePipe } from '@angular/common';
     AppComponent,
     CertificadoComponent,
     SolicitudesComponent,
+    ConsultaExistenciaComponent,
+    ConsultaLevantamientoComponent,
     HomeComponent,
     BannerComponent
   ],
@@ -26,8 +30,8 @@ import { DatePipe } from '@angular/common';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    AdministracionModule,
     HttpClientModule,
+    DataTablesModule
   ],
   providers: [ DatePipe,],
   bootstrap: [AppComponent]
