@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class CiudadanoService {
 
-  url:string = "https://localhost:8080/api/"
+  url:string = "https://impedimentosalidaapi.azurewebsites.net/api/"
 
   constructor(private http:HttpClient) { }
 

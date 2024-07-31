@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class LevantamientoSalidaService {
 
-  url:string = "https://localhost:8080/api/"
+  url:string = "https://impedimentosalidaapi.azurewebsites.net/api/"
 
   constructor(private http:HttpClient) { }
 
