@@ -142,8 +142,12 @@ export class CertificadoComponent implements OnInit {
       
       `
     }
-    
-    this.emailService.sendEmail(email).subscribe();
+    const formData = new FormData();
+    formData.append('Para', email.para);
+    formData.append('Asunto', email.asunto);
+    formData.append('Cuerpo', email.cuerpo);
+
+    this.emailService.sendEmail(formData).subscribe();
 
   }
 

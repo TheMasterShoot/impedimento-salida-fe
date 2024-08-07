@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/a4b007dd-32ea-466b-b075-72a3874fda23/resourceGroups/istesis/providers/Microsoft.Web/sites/impsapgr",
+    "appService.deploySubpath": "dist\\impedimento-salida-fe"
+}
